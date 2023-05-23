@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambola</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>TAMBOLA</h1>
+    <a><button id="ticket" onclick="onCreate()">Create Ticket</button> </a>
+    <h3 style="color: aliceblue;">Click on Red Dot to create Ticket!</h3>
+   
+    <br><br>
+    <p id="yourTicket" style="color: white;"></p>
+    <button id="allTickets" onclick="getTickets()">All Tickets</button>
+    <ul id="box" style="color: white;"></ul>
+    <select id="show" class="form-select">
+        <option value="3">3</option>
+        <option value="7">7</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="showFunc()">Show</button>
+    <div class="pagination", id="pagination"></div>
+
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js" ></script>
+</body>
+</html>
